@@ -4,6 +4,10 @@
 	<center style="font-style:italic">by Quentin LAURENT and Theophile WEMAERE</center>
 </html>
 
+>[!NOTE]
+>Codes for this lab can also be found on Github :
+>https://github.com/Theophile-Wemaere/ArchProgDistr
+
 
 # Part 1. Single Socket
 
@@ -344,3 +348,8 @@ if __name__ == "__main__":
             server.close()
 
 ```
+
+Example of use of the chat server and clients :
+![[img/img4.png]]
+
+We can see the broadcast system work as intended, and all users receive other users messages.
