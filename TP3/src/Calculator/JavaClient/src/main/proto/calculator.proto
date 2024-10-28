@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package calculator;
+
+service CalculatorService {
+    // Add two numbers
+    rpc Add(AddRequest) returns (AddResponse);
+    // Subtract two numbers
+    rpc Subtract(SubtractRequest) returns (SubtractResponse);
+    // Multiply two numbers
+    rpc Multiply(MultiplyRequest) returns (MultiplyResponse);
+    // Divide two numbers
+    rpc Divide(DivideRequest) returns (DivideResponse);
+}
+
+// Request to add two numbers
+message AddRequest {
+    int32 first_number = 1;
+    int32 second_number = 2;
+}
+
+// Request to subtract two numbers
+message SubtractRequest {
+    int32 first_number = 1;
+    int32 second_number = 2;
+}
+
+// Request to multiply two numbers
+message MultiplyRequest {
+    int32 first_number = 1;
+    int32 second_number = 2;
+}
+
+// Request to divide two numbers
+message DivideRequest {
+    int32 first_number = 1;
+    int32 second_number = 2;
+}
+
+message AddResponse {
+    int32 result = 1;
+}
+
+message SubtractResponse {
+    int32 result = 1;
+}
+
+message MultiplyResponse {
+    int32 result = 1;
+}
+
+message DivideResponse {
+    float result = 1;
+}
